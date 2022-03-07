@@ -1,0 +1,713 @@
+/*
+Theme Name: TEMA FAUZAN
+Theme URI:  http://wordpress.org/
+Author: Fauzan Alghifari
+Author URI: http://wordpress.org/
+Description: tema untuk kalian
+*/
+
+/*CSS HEADER*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    border: 1px solid orange;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    z-index: 10;
+    background: black;
+}
+
+.app-header{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.app-header .app-header__images {
+    max-width: 200px;
+    max-height: 72px;
+    width: 100%;
+    right: 100%;
+}
+
+.app-header .app-header__images img {
+    position: relative;
+    object-fit: cover;
+}
+
+.app-header .app-header__navigation{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.app-header .app-header__navigation ul{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.app-header .app-header__navigation li{
+    list-style: none;
+    margin: 0 5px;
+    display: inline-block;
+    float: left;
+}
+
+.app-header .app-header__navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 14px 10px;
+    letter-spacing: 1px;
+}
+
+.app-header .app-header__navigation li a:hover {
+    color: orange;
+}
+
+header .search {
+    position: relative;
+    width: 300px;
+    height: 40px;
+}
+
+header .search input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: black;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 0 10px 0 45px;
+}
+
+header .search input::placeholder {
+    color: black;
+}
+
+header .search .fa-search {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: black;
+    border-right: 1px solid black;
+    padding-right: 10px;
+
+}
+
+.font-kapital{
+    text-transform: uppercase;
+}
+
+.current_page_parent a, .current-menu-item a {
+    border-bottom: 2px solid orange;
+    padding: 10px;
+}
+
+.aside {
+    margin-top: 20px;
+    float: left;
+}
+
+main {
+    margin-top: 60px;
+}
+
+/*CSS SINGLE PAGE*/
+.single-page {
+    margin-top: 80px;
+    width: 65%;
+    margin-left: 20px;
+}
+
+.single-page .single-page__image {
+    position: relative;
+}
+
+.single-page .single-page__image img {
+    position: relative;
+    width: 1270px;
+    height: 720px;
+    object-fit: fill;
+}
+
+.single-page .single-page__title {
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+.sub_judul {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#search_form {
+    float: right;
+    margin-top: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+.gallery {
+    background-color: #ffa979;
+    padding: 10px;
+}
+
+#custom_post h1 {
+    font-size: 30px;
+}
+
+#custom_post a {
+    display: inline-block;
+    width: 50%;
+    margin: 2%;
+    background-color: #ff0752;
+    padding: 5px;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+}
+
+.body-image {
+    width: 30px;
+    height: 20px;
+    border: 4px solid #575D63;
+    padding: 10px;
+    margin: 20px;
+}
+
+.page-numbers.current > span {;
+    background-color: gray;
+    color: white;
+}
+
+/*CSS CONTENT TOP*/
+.flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1280px;
+    float: left;
+}
+
+.mx-auto {
+    margin: auto !important;
+}
+
+.distance{
+    margin-bottom: 60px;
+}
+
+.app-card-primary {
+    width: 1280px;
+    height: 500px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 0 10px black;
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+
+.app-card-primary .app-card-primary__container {
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 25px;
+}
+
+.app-card-primary .app-card-primary__container .app-card-primary__images {
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    width: 100%;
+    height: 500px;
+}
+
+.app-card-primary .app-card-primary__container .app-card-primary__images img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.app-card-primary .app-card-primary__container .app-card-primary__images a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.app-card-primary .app-card-primary__container .app-card-primary__images .app-card-primary__background {
+    padding: 20px;
+}
+
+.app-card-primary .app-card-primary__container .app-card-primary__images .app-card-primary__background h3 {
+    position: absolute;
+    top: 450px;
+    font-size: 26px;
+    color: white;
+    background: black;
+}
+
+.app-card-primary .app-card-primary__container .app-card-primary__images .app-card-primary__background a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.app-card-primary .app-card-primary__container .app-card-primary__images .app-card-primary__background a:hover {
+    color: orange;
+}
+
+.app-card-primary .app-card-primary__box p {
+    font-size: 14px;
+}
+
+.app-card-secondary {
+    margin-right: 10px;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 0 10px black;
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+
+.app-card-secondary .app-card-secondary__container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.app-card-secondary .app-card-secondary__box {
+    padding: 20px;
+}
+
+.app-card-secondary .app-card-secondary__box h3 {
+    font-size: 18px;
+}
+
+.app-card-secondary .app-card-secondary__box a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.app-card-secondary .app-card-secondary__box a:hover{
+    color: orange;
+}
+
+.app-card-secondary .app-card-secondary__box p {
+    font-size: 14px;
+}
+
+.app-card-secondary .app-card-secondary__container .app-card-secondary__images {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.app-card-secondary .app-card-secondary__container .app-card-secondary__images img {
+    position: relative;
+    object-fit: cover;
+}
+
+.category {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.category .category-informasi {
+    width: 100%;
+    height: 300px;
+    background: black;
+    border-radius: 25px;
+}
+
+.category .category-informasi h1 {
+    padding: 20px 20px 0 20px;
+    text-align: center;
+    font-size: 40px;
+    color: orange;
+    text-transform: uppercase;
+}
+
+.category .category-informasi hr {
+    height: 10px;
+    border-width: 0;
+    color: white;
+    background-color: white;
+}
+
+.category .category-informasi h3 {
+    padding: 0 20px 5px 20px;
+    text-align: left;
+    font-size: 20px;
+    color: white;
+}
+
+.category .category-informasi a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.category .category-informasi a:hover {
+    color: orange;
+}
+
+/*ALL POST*/
+.app-card-allpost {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 0 10px black;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.app-card-allpost .app-card-allpost__images {
+    position: relative;
+}
+
+.app-card-allpost .app-card-allpost__images img {
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.app-card-allpost .app-card-allpost__box {
+    padding: 20px;
+}
+
+.app-card-allpost .app-card-allpost__box h3{
+    font-size: 18px;
+}
+
+.app-card-allpost .app-card-allpost__box a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.app-card-allpost .app-card-allpost__box a:hover {
+    color: orange;
+}
+
+.app-card-allpost .app-card-allpost__box p {
+    font-size: 14px;
+}
+
+/*CSS CONTENT MIDDLE*/
+.size-middlepost{
+    margin-top: 200px;
+    margin-left: 10px;
+}
+
+.middlepost{
+    width: 32%;
+    float: left;
+    margin-right: 10px;
+}
+
+.middlepost .middlepost__title{
+    background: black;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.middlepost .middlepost__text{
+    background: white;
+    color: black;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.calenderfauzan{
+    background: greenyellow;
+}
+
+/*CSS LATEST POST BY GUA*/
+
+/*CSS BARU VERSI GUA*/
+.post-highlight {
+    position: relative;
+    display: block;
+    margin: auto;
+    overflow: hidden;
+    height: 380px;
+    margin-bottom: 5px;
+}
+.post-highlight .post-thumbnail {
+    height: 350px;
+    position: relative;
+    display: block;
+    margin: auto;
+    overflow: hidden;
+}
+.post-highlight .post-thumbnail-link {
+    position: relative;
+    display: block;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+.post-highlight .post-thumbnail img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+}
+.post-highlight__content-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0, #000 46%, #000 100%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, #000 46%, #000 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #000 46%, #000 100%);
+    width: 100%;
+}
+.title-top {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-bottom: 2px;
+    color: #fff;
+    letter-spacing: 0;
+}
+
+.label-top {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 0;
+    color: #fff;
+    background: var(--primary-color);
+    font-size: 10px;
+    margin-bottom: 5px;
+    line-height: 16px;
+    border: 1px solid var(--primary-color);
+    padding: 0 10px;
+    border: 0;
+    padding: 5px 10px;
+    background: var(--primary-color);
+    background: linear-gradient(153deg, var(--primary-color) 0, var(--secondary-color) 80%);
+}
+
+.row.row-card-mini {
+    --bs-gutter-x: .3rem;
+    --bs-gutter-y: 0;
+}
+
+.card.card-mini{
+    --card-height: 150px;
+    height: var(--card-height);
+}
+
+.card-body {
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+.card-mini .card__media {
+    position: relative;
+    display: block;
+    margin: auto;
+    overflow: hidden;
+    height: var(--card-height);
+}
+
+
+.headline-content {
+    --headline-font-size: 14px;
+    --headline-line-height: 22px;
+    --headline-font-weight: 600;
+    --headline-line-clamp: 3;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0, #000 46%, #000 100%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, #000 46%, #000 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #000 46%, #000 100%);
+    width: 100%;
+}
+@media screen and (max-width: 768px) {
+    .headline-content {
+        --headline-font-size: 14px;
+        --headline-line-height: 22px;
+        --headline-line-clamp: 3;
+    }
+}
+@media screen and (max-width: 500px) {
+    .headline-content {
+        --headline-font-size: 12px;
+        --headline-line-height: 20px;
+        --headline-line-clamp: 2;
+    }
+}
+@media screen and (max-width: 425px) {
+    .headline-content {
+        --headline-font-size: 11px;
+        --headline-line-height: 20px;
+        --headline-line-clamp: 2;
+    }
+}
+@media screen and (max-width: 375px) {
+    .headline-content {
+        --headline-font-size: 11px;
+        --headline-line-height: 20px;
+        --headline-line-clamp: 2;
+    }
+}
+.headline-content .title-top {
+    font-size: var(--headline-font-size);
+    color: #fff;
+    font-weight: 600;
+    line-height: var(--headline-line-height);
+    margin-bottom: 2px;
+    letter-spacing: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: var(--headline-line-clamp);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 500px) {
+    .card-mini .label-top {
+        display: none;
+    }
+}
+@media screen and (max-width: 425px) {
+    .card-mini .label-top {
+        display: none;
+    }
+}
+@media screen and (max-width: 375px) {
+    .card-mini .label-top {
+        display: none;
+    }
+}
+
+
+
+/*CSS FOOTER*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    width: 100%;
+    border: 1px solid orange;
+    background: black;
+    height: auto;
+    font-family: "poppins", sans-serif;
+    padding-top: 40px;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: white;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i {
+    color: orange;
+}
+
+.footer-bottom {
+    background: black;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
